@@ -91,6 +91,7 @@ bool loadConfigFile(const string config_file_path, ConfigInfo& config_info)
         LOG(ERROR) << "load config file failed:" << config_file_path;
         return false;
     }
+    LOG(INFO) << "Config file loaded";
     config_file.close();
     return true;
 }
