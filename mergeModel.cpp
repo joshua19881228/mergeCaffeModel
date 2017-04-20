@@ -101,14 +101,14 @@ bool MergeModelClass::initDstModel()
     dst_net = new Net<float>(config_info.dst_prototxt_path, caffe::TRAIN);
     if (dst_net == NULL)
         return false;
-    FILE* file = fopen(config_info.dst_model_path.c_str(), "r");
-    if (file == NULL)
-        LOG(WARNING) << "dst model initialized from empty weights";
-    else
-    {
-        dst_net->CopyTrainedLayersFrom(config_info.dst_model_path);
-        fclose(file);
-    }        
+    //FILE* file = fopen(config_info.dst_model_path.c_str(), "r");
+    //if (file == NULL)
+    //    LOG(WARNING) << "dst model initialized from empty weights";
+    //else
+    //{
+    //    dst_net->CopyTrainedLayersFrom(config_info.dst_model_path);
+    //    fclose(file);
+    //}
     return true;
 }
 
