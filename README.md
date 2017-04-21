@@ -1,6 +1,6 @@
 # mergeCaffeModel #
 
-A tool is implemented to merge caffemodels according to a config file.
+A tool is implemented to merge caffemodels according to a config file. The source code can be found in this [repo](https://github.com/joshua19881228/mergeCaffeModel)
 
 Under development...
 
