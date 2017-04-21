@@ -44,7 +44,7 @@ An example code is as follows
 
 Of course you can write your own main function, which can take inputs from command line.
 
-*NOTE* only float type is supported.
+**NOTE** only float type is supported.
 
 ## 20170420 ##
 
