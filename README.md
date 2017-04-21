@@ -44,6 +44,8 @@ An example code is as follows
 
 Of course you can write your own main function, which can take inputs from command line.
 
+*NOTE* only float type is supported.
+
 ## 20170420 ##
 
 A class is defined to merge caffemodels.
