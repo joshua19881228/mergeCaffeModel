@@ -51,3 +51,7 @@ Of course you can write your own main function, which can take inputs from comma
 A class is defined to merge caffemodels.
 
 Now the project can copy src weights to dst weights automatically if the two layers have same name. Further test will be carried out to confirm weights can be copied from src caffemodel using pairs.
+
+## 20170423 ##
+
+Copying weights using pairs has been conformed. 
