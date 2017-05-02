@@ -54,4 +54,4 @@ Now the project can copy src weights to dst weights automatically if the two lay
 
 ## 20170423 ##
 
-Copying weights using pairs has been conformed. 
+Copying weights using pairs has been confirmed. 
