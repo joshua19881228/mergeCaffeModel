@@ -7,7 +7,7 @@
 #include "caffe/proto/caffe.pb.h"
 #include "caffe/util/db.hpp"
 #include "caffe/util/io.hpp"
-#include "caffe/vision_layers.hpp"
+#include "caffe/layer.hpp"
 
 using caffe::Blob;
 using caffe::Caffe;

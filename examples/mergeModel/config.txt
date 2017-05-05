@@ -1,0 +1,3 @@
+./examples/mergeModel/lenet_merge.prototxt ./examples/mergeModel/lenet_merge.caffemodel
+./examples/mergeModel/lenet.prototxt ./examples/mergeModel/lenet_iter_5000.caffemodel 1 0
+./examples/mergeModel/lenet.prototxt ./examples/mergeModel/lenet_iter_10000.caffemodel 0 2 conv1:conv1_merge conv2:conv2_merge

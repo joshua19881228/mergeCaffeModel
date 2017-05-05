@@ -2,8 +2,6 @@
 
 A tool is implemented to merge caffemodels according to a config file. The source code can be found in this [repo](https://github.com/joshua19881228/mergeCaffeModel)
 
-Under development...
-
 ## Dependency ##
 
 Any version of Caffe that has been successfully compiled.
@@ -54,4 +52,8 @@ Now the project can copy src weights to dst weights automatically if the two lay
 
 ## 20170423 ##
 
-Copying weights using pairs has been confirmed. 
+Copying weights using pairs has been confirmed.
+
+## 20170505 ##
+
+Update code to deal with newer virsion of Caffe. Add a complete example for merging models.

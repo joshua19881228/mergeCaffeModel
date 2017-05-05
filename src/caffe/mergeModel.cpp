@@ -1,4 +1,4 @@
-#include "mergeModel.h"
+#include "caffe/mergeModel.h"
 #include <strstream>
 using std::strstream;
 
@@ -65,7 +65,6 @@ bool MergeModelClass::splitSrcLine(const string input, SrcInfo& a_src_info)
 bool MergeModelClass::loadConfigFile(const string config_file_path)
 {
     std::ifstream config_file(config_file_path.c_str());
-    int set_num = 0;
     if (config_file)
     {
         string first_line;
@@ -77,7 +76,8 @@ bool MergeModelClass::loadConfigFile(const string config_file_path)
         }
         config_info.dst_prototxt_path = first_line.substr(0, first_line.find(" "));
         config_info.dst_model_path = first_line.substr(first_line.find(" ") + 1, first_line.length() - first_line.find(" ") - 1);
-        while (!config_file.eof())
+	std::cout<<config_file.eof()<<std::endl;
+	while (!config_file.eof())
         {
             string a_line;
             SrcInfo a_src_info;
