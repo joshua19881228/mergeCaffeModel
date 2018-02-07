@@ -8,6 +8,12 @@ Any version of Caffe that has been successfully compiled.
 
 ## Usage ##
 
+### Compile Source Code ###
+
+Copy the source code to the corresponding folders in Caffe and compile. An executable file named as mergeCaffeModel should be generated in the "build/tools" folder.
+
+### Create Configuration File ###
+
 A configuration file should be prepared. The file content should be like
 
     [path to dst prototxt] [path to dst caffemodel]
@@ -26,6 +32,14 @@ An example can be found below
     src1.prototxt src1.caffemodel 0 1 layer_0:layer_dst_0
 
 It means that all the layers in dst.caffemodel that share the same name with those in src0.caffemodel will be filled by the weights in src0.caffemodel as long as they have the exact same number of parameters. And the layer_dst_0 in dst.caffemodel will be filled by the weigths of layer_0 in src1.caffemodel.
+
+### Merge Caffe Model in Commond Line ###
+
+After the configuration file is created, you can run a commond to merge the caffemodel.
+
+`build/tools/mergeCaffeModel path_to_config_file`
+
+### Use the Module in Your Own Code ###
 
 An example code is as follows
 
